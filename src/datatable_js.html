@@ -1,0 +1,21 @@
+<script>
+  google.script.run.withSuccessHandler(showData).getData();
+  function showData(dataArray){
+    $(document).ready(function(){
+      $('#data-table').DataTable({
+        data: dataArray,
+        columns: [
+          {"title":"คอลัมน์ 1"},
+          {"title":"คอลัมน์ 2"},
+          {"title":"คอลัมน์ 3"},
+          {"title":"คอลัมน์ 4"},
+          {"title":"คอลัมน์ 5"},
+          {"title":"คอลัมน์ 6"},
+          {"title":"คอลัมน์ 7"},
+          {"title":"คอลัมน์ 8"},
+          {"title":"คอลัมน์ 9"}
+        ]
+      });
+    });
+  }
+</script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <title>หน้าหลัก</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+</style>
+
+  </head>
+  <body>
+
+  <div class="p-5 bg-primary text-white text-center">
+  <h1>WEB SITE KRUSUKSANTI</h1>
+  <p>ส่วนหัวเว็บ</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+
+      <?var url = getUrl();?>
+      
+      <li class="nav-item">
+        <a class="nav-link active" href="<?=url?>?page=index">หน้าหลัก</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?=url?>?page=sign">sign</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?=url?>?page=contact">contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?=url?>?page=sheetrock">sheetrock</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?=url?>?page=datatable">datatable</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="<?=url?>?page=sign_to_image">test</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>-->
+    </ul>
+  </div>
+</nav>
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>Footer</p>
+</div>
+ </div>
+  </body>
+</html>
